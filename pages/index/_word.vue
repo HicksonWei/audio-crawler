@@ -7,7 +7,7 @@
       <h1 v-if="audioObj.audioArray.length !== 0" class="sm:text-6xl text-4xl text-center my-16 text-orange-400">
         {{ audioObj.word }}
       </h1>
-      <div class="flex xl:flex-row flex-col flex-wrap justify-around items-center">
+      <div class="flex flex-row flex-wrap sm:justify-start justify-center items-stretch content-start">
         <Card v-for="(item, index) in audioObj.audioArray" :key="index" :url="item" :from="audioObj.from" />
       </div>
       <p v-if="audioObj.audioArray.length === 0" class="text-center text-red-500 font-bold mt-12">

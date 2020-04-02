@@ -50,9 +50,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/toast'
   ],
-  markdownit: {
-    injected: true
-  },
   toast: {
     containerClass: 'toast-block',
     duration: 3000,
