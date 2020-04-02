@@ -78,92 +78,93 @@ export default {
   /deep/ code {
     word-wrap: break-word;
     white-space: pre-line;
-  }
-  /deep/ .hljs {
-    display: block;
-    overflow-x: auto;
-    background: #2b2b2b;
-    color: #f8f8f2;
-    padding: 0.5em;
 
-    &-comment,
-    &-quote {
+    /deep/ .hljs {
+      display: block;
+      overflow-x: auto;
+      background: #2b2b2b;
+      color: #f8f8f2;
+      padding: 0.5em;
+    }
+
+    /deep/ .hljs-comment,
+    /deep/ .hljs-quote {
       color: #d4d0ab;
     }
 
-    &-variable,
-    &-template-variable,
-    &-tag,
-    &-name,
-    &-selector-id,
-    &-selector-class,
-    &-regexp,
-    &-hljs-deletion {
+    /deep/ .hljs-variable,
+    /deep/ .hljs-template-variable,
+    /deep/ .hljs-tag,
+    /deep/ .hljs-name,
+    /deep/ .hljs-selector-id,
+    /deep/ .hljs-selector-class,
+    /deep/ .hljs-regexp,
+    /deep/ .hljs-hljs-deletion {
       color: #ffa07a;
     }
 
-    &-number,
-    &-built_in,
-    &-builtin-name,
-    &-literal,
-    &-type,
-    &-params,
-    &-meta,
-    &-link {
+    /deep/ .hljs-number,
+    /deep/ .hljs-built_in,
+    /deep/ .hljs-builtin-name,
+    /deep/ .hljs-literal,
+    /deep/ .hljs-type,
+    /deep/ .hljs-params,
+    /deep/ .hljs-meta,
+    /deep/ .hljs-link {
       color: #ffa07a;
     }
 
-    &-attribute {
+    /deep/ .hljs-attribute {
       color: #ffd700;
     }
 
-    &-string,
-    &-symbol,
-    &-bullet,
-    &-addition {
+    /deep/ .hljs-string,
+    /deep/ .hljs-symbol,
+    /deep/ .hljs-bullet,
+    /deep/ .hljs-addition {
       color: #abe338;
     }
 
-    &-title,
-    &-section {
+    /deep/ .hljs-title,
+    /deep/ .hljs-section {
       color: #00e0e0;
     }
 
     /* Purple */
-    &-keyword,
-    &-selector-tag {
+    /deep/ .hljs-keyword,
+    /deep/ .hljs-selector-tag {
       color: #dcc6e0;
     }
 
-    &-emphasis {
+    /deep/ .hljs-emphasis {
       font-style: italic;
     }
 
-    &-strong {
+    /deep/ .hljs-strong {
       font-weight: bold;
     }
 
     @media screen and (-ms-high-contrast: active) {
-      &-addition,
-      &-attribute,
-      &-built_in,
-      &-builtin-name,
-      &-bullet,
-      &-comment,
-      &-link,
-      &-literal,
-      &-meta,
-      &-number,
-      &-params,
-      &-string,
-      &-symbol,
-      &-type,
-      &-quote {
+      /deep/ .hljs-addition,
+      /deep/ .hljs-attribute,
+      /deep/ .hljs-built_in,
+      /deep/ .hljs-builtin-name,
+      /deep/ .hljs-bullet,
+      /deep/ .hljs-comment,
+      /deep/ .hljs-link,
+      /deep/ .hljs-literal,
+      /deep/ .hljs-meta,
+      /deep/ .hljs-number,
+      /deep/ .hljs-params,
+      /deep/ .hljs-string,
+      /deep/ .hljs-symbol,
+      /deep/ .hljs-type,
+      /deep/ .hljs-quote {
         color: highlight;
       }
 
-      &-keyword,
-      &-selector-tag {
+      /deep/ .hljs-keyword,
+      /deep/ .hljs-selector-tag {
         font-weight: bold;
       }
     }
