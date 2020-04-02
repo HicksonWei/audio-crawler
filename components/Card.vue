@@ -56,8 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  flex: 0 0 30%;
-  margin: 0 1.666% 20px 1.666%;
+  flex: 0 0 600px;
 
   @media (max-width: 1280px) {
     flex: 0 0 48%;
@@ -87,96 +86,5 @@ export default {
 }
 .btn-pink:hover {
   @apply bg-pink-700;
-}
-
-/* Red */
-/deep/ .hljs {
-  display: block;
-  overflow-x: auto;
-  background: #2b2b2b;
-  color: #f8f8f2;
-  padding: 0.5em;
-
-  &-comment,
-  &-quote {
-    color: #d4d0ab;
-  }
-
-  &-variable,
-  &-template-variable,
-  &-tag,
-  &-name,
-  &-selector-id,
-  &-selector-class,
-  &-regexp,
-  &-hljs-deletion {
-    color: #ffa07a;
-  }
-
-  &-number,
-  &-built_in,
-  &-builtin-name,
-  &-literal,
-  &-type,
-  &-params,
-  &-meta,
-  &-link {
-    color: #ffa07a;
-  }
-
-  &-attribute {
-    color: #ffd700;
-  }
-
-  &-string,
-  &-symbol,
-  &-bullet,
-  &-addition {
-    color: #abe338;
-  }
-
-  &-title,
-  &-section {
-    color: #00e0e0;
-  }
-
-  /* Purple */
-  &-keyword,
-  &-selector-tag {
-    color: #dcc6e0;
-  }
-
-  &-emphasis {
-    font-style: italic;
-  }
-
-  &-strong {
-    font-weight: bold;
-  }
-
-  @media screen and (-ms-high-contrast: active) {
-    &-addition,
-    &-attribute,
-    &-built_in,
-    &-builtin-name,
-    &-bullet,
-    &-comment,
-    &-link,
-    &-literal,
-    &-meta,
-    &-number,
-    &-params,
-    &-string,
-    &-symbol,
-    &-type,
-    &-quote {
-      color: highlight;
-    }
-
-    &-keyword,
-    &-selector-tag {
-      font-weight: bold;
-    }
-  }
 }
 </style>

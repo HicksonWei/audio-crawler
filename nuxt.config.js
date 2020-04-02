@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/scss/global.scss'],
+  css: ['~/assets/scss/global.scss', 'highlight.js/styles/a11y-dark.css'],
   /*
    ** Plugins to load before mounting the App
    */

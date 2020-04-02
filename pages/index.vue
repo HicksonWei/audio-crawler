@@ -64,7 +64,7 @@ export default {
       if (!this.afterFirstSearch) {
         this.firstSearch()
       }
-      this.$router.push(`/${this.input}`)
+      this.$router.push({ path: `/${this.input}`, query: { q: this.selectedSite } })
       this.input = ''
     },
     firstSearch() {
