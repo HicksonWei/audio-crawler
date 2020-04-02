@@ -5,7 +5,7 @@
       :src="from === 'Cambridge' ? `https://dictionary.cambridge.org${url}` : url"
       class="my-2 mx-auto outline-none"
     ></audio>
-    <div v-html="markedContent"></div>
+    <div class="code-content" v-html="markedContent"></div>
     <button v-clipboard:copy="content" class="btn btn-pink w-full" @click="copied">Copy</button>
   </div>
 </template>
@@ -69,11 +69,17 @@ export default {
   }
 }
 
-/deep/ code {
-  word-wrap: break-word;
-  white-space: pre-line;
+.code-content {
+  /deep/ pre {
+    @apply rounded rounded-b-none bg-black px-2;
+    min-height: 180px;
+  }
 
-  .hljs {
+  /deep/ code {
+    word-wrap: break-word;
+    white-space: pre-line;
+  }
+  /deep/ .hljs {
     display: block;
     overflow-x: auto;
     background: #2b2b2b;
@@ -162,10 +168,6 @@ export default {
       }
     }
   }
-}
-
-/deep/ pre {
-  @apply rounded rounded-b-none bg-black px-2;
 }
 
 .btn {
