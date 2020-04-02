@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .card {
   flex: 0 0 600px;
 
@@ -69,12 +69,12 @@ export default {
   }
 }
 
-/deep/ code {
+code {
   word-wrap: break-word;
   white-space: pre-line;
 }
 
-/deep/ pre {
+pre {
   @apply rounded rounded-b-none bg-black px-2;
 }
 
