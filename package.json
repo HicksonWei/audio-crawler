@@ -16,7 +16,7 @@
     "@nuxtjs/toast": "^3.3.0",
     "gsap": "^3.2.6",
     "highlight.js": "^9.18.1",
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "nuxt": "^2.0.0",
     "regenerator-runtime": "^0.13.5",
     "vue-clipboard2": "^0.3.1"
